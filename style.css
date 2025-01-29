@@ -1,6 +1,9 @@
-.display-6{
-    font-weight: 600 !important;
+.hero-header{
+    padding-top: 160px;
+    padding-bottom: 100px;
+    position: relative;
 }
+
 .navbar-light{
     margin-right: 25px;
     padding: 35px 0px !important;
@@ -8,20 +11,42 @@
     font-weight: 500 !important;
 }
 
+.button-1{
+    border-color: #f74780 !important;
+    font-family: "Rubik",sans-serif !important;
+}
+.button-1:hover{
+    background-color: #f74780 !important;
+    color: white !important;
+}
+
+.button-2{
+    background-color: #f74780 !important;
+    color: white !important;
+    font-family: "Rubik",sans-serif !important;
+}
+.button-2:hover{
+    border-color: #f74780 !important;
+    background-color: white !important;
+    color: #f74780 !important;
+}
+
+.button-3{
+    background-color: #f6f6fa !important;
+    color: #f74780 !important;
+    font-family: "Rubik",sans-serif !important;
+}
+.button-3:hover{
+    background-color: #f74780 !important;
+    color: white !important;
+}
+
 .text-color{
     color: #f74780 !important;
 }
 
-.margin-b{
-    margin-bottom: 70px !important;
-}
-
-.logo-color{
-    color: #6610f2 !important;
-}
-
-.service-item{
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+.display-6{
+    font-weight: 600 !important;
 }
 
 h4{
@@ -39,8 +64,41 @@ p{
 }
 
 .display-4{
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
     font-weight: 700 !important;
     color: #353f4f !important;
     font-family: "Plus Jakarta Sans",sans-serif !important;
 }
+
+.margin-b{
+    margin-bottom: 70px !important;
+}
+
+.logo-color{
+    color: #6610f2 !important;
+}
+
+.service-item{
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+}
+.service-item:hover{
+    background-color: rgba(102, 16, 242, 0.09);
+    transition: 0.5s !important;
+}
+
+.feature-content a{
+    font-size: 1.5rem !important;
+    /* font-weight: !important; */
+    color: #353f4f !important;
+    font-family: "Plus Jakarta Sans",sans-serif !important;
+}
+.feature-content a:hover{
+    color: #f74780 !important;
+}
+
+.small{
+    color: #353f4f !important;
+    font-weight: 400 !important;
+    font-family: "Rubik", sans-serif !important;
+}
+
