@@ -11,6 +11,10 @@
     font-weight: 500 !important;
 }
 
+.bg-light{
+    background-color: #f6f6fa !important;
+}
+
 .button-1{
     border-color: #f74780 !important;
     font-family: "Rubik",sans-serif !important;
@@ -102,3 +106,8 @@ p{
     font-family: "Rubik", sans-serif !important;
 }
 
+.accordion-button:not(.collapsed){
+    color: #f74780 !important;
+    background-color: #feedf2 !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+}
