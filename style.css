@@ -156,3 +156,24 @@ p{
     justify-content: space-between;
     transition: 0.5s;
 }
+
+.footer{
+    background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: #353f4f !important;
+    line-height: 35px;
+    font-family: "Rubik", sans-serif !important;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.footer-item a:hover{
+    color: #f74780 !important;
+    letter-spacing: 2px !important;
+}
