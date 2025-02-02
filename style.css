@@ -177,3 +177,22 @@ p{
     color: #f74780 !important;
     letter-spacing: 2px !important;
 }
+.share-icon{
+    color: #6610f2;
+}
+.btn-icon{
+    background: #f74780 !important;
+    color: #fff !important;
+}
+.btn-square{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.footer2{
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #353f4f;
+}
