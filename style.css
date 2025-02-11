@@ -30,6 +30,8 @@
     z-index: -1;
     bottom: -9%;
     left: -7%;
+    animation-name: example;
+    animation-iteration-count: infinite;
 }
 .hero-header::before{
     content: "";
@@ -42,6 +44,7 @@
     z-index: -1;
     left: 100px;
     bottom: 100px;
+    animation-iteration-count: infinite;
 }
 .hero-header::after{
     content: "";
@@ -54,7 +57,9 @@
     z-index: -1;
     left: 100px;
     bottom: 100px;
+    animation-iteration-count: infinite;
 }
+
 .header::after{
     position: absolute;
     content: "";
@@ -65,24 +70,8 @@
     background-color: #f6f6fa;
     border-radius: 22% 78% 33% 67% / 32% 0% 100% 68%;
     z-index: -1;
-    animation: move 5s linear infinite;
+    animation-iteration-count: infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .button-1{
     border-color: #f74780 !important;
@@ -113,7 +102,6 @@
     background-color: #f74780 !important;
     color: white !important;
 }
-
 .text-color{
     color: #f74780 !important;
 }
@@ -246,6 +234,27 @@ p{
     height: 65px !important;
 
 }
+
+.carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 40px !important;
+    border: 3px solid #353f4f !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
