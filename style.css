@@ -19,7 +19,7 @@
     color: #f74780 !important;
 }
 
-.header::before{
+.before1{
     content: "";
     border: 30px solid rgba(247, 71, 128, 0.05);
     border-radius: 200px;
@@ -30,12 +30,33 @@
     z-index: -1;
     bottom: -9%;
     left: -7%;
-    animation-name: example;
-    animation-iteration-count: infinite;
+    animation: RotateMoveHeader 5s linear infinite;
 }
-.hero-header::before{
+@keyframes RotateMoveHeader{
+    0%{
+        transform:rotateZ(0deg) rotate(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg) rotate(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
+    }
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        left: -10px;
+    }
+    75%{
+        bottom: 9%;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+.before2{
     content: "";
-    border: 30px solid rgba(247, 71, 128, 0.05);
+    border: 30px solid rgba(102, 16, 242, 0.05);
     border-radius: 150px;
     width: 300px;
     height: 300px;
@@ -44,11 +65,35 @@
     z-index: -1;
     left: 100px;
     bottom: 100px;
-    animation-iteration-count: infinite;
+    animation: RotateMoveSty-4 45s linear infinite;
 }
-.hero-header::after{
+@keyframes RotateMoveSty-4{
+    0%{
+        left: 100px;
+    }
+    40%{
+        bottom: -0px;
+    }
+    50%{
+        left: 700px;
+    }
+    70%{
+        bottom: 500px;
+    }
+    80%{
+        left: 400px;
+    }
+    95%{
+        bottom: -0px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+
+
+.after1{
     content: "";
-    border: 30px solid rgba(247, 71, 128, 0.05);
     transition: 0.5s;
     background: url(img/sty-1.png) center center no-repeat;
     width: 58px;
@@ -57,12 +102,36 @@
     z-index: -1;
     left: 100px;
     bottom: 100px;
-    animation-iteration-count: infinite;
+    animation: RotateMoveSty-3 45s linear infinite;
+}
+@keyframes RotateMoveSty-3{
+    0%{
+        left: 100px;
+    }
+    40%{
+        bottom: -0px;
+    }
+    50%{
+        left: 700px;
+    }
+    70%{
+        bottom: 500px;
+    }
+    80%{
+        left: 400px;
+    }
+    95%{
+        bottom: -0px;
+    }
+    100%{
+        left: 100px;
+    }
 }
 
-.header::after{
-    position: absolute;
+
+.hero-header::after{
     content: "";
+    position: absolute;
     top: 0;
     right: 0;
     width: 60%;
@@ -70,8 +139,14 @@
     background-color: #f6f6fa;
     border-radius: 22% 78% 33% 67% / 32% 0% 100% 68%;
     z-index: -1;
-    animation-iteration-count: infinite;
+    animation: bgMove 5s linear infinite;
 }
+
+
+
+
+
+
 
 .button-1{
     border-color: #f74780 !important;
@@ -147,6 +222,22 @@ p{
     transition: 0.5s !important;
 }
 
+.RotateMoveLeft{
+    position: relative;
+    animation: RotateMoveLeft 10s linear infinite;
+}
+@keyframes RotateMoveLeft{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 40px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
 .feature-content a{
     font-size: 1.5rem !important;
     /* font-weight: !important; */
@@ -160,10 +251,6 @@ p{
 .features-img img{
     background-color: #f6f6fa;
     border-radius: 58% 42% 21% 79% / 30% 29% 71% 70%;
-}
-.RotateMoveLeft{
-    position: relative;
-    animation: RotateMoveLeft 10s linear infinite;
 }
 
 .small{
@@ -232,29 +319,42 @@ p{
     border-radius: 50% !important;
     width: 65px !important;
     height: 65px !important;
-
 }
 
+.carousel-control-prev:hover{
+    background-color: #f74780 !important;
+    color: white !important;
+    transition: all 0.5s !important;
+}
+.carousel-control-next:hover{
+    background-color: #f74780 !important;
+    color: white !important;
+    transition: all 0.5s !important;
+}
 .carousel-indicators [data-bs-target]{
-    width: 10px !important;
-    height: 10px !important;
+    width: 50px !important;
+    height: 50px !important;
     border-radius: 40px !important;
     border: 3px solid #353f4f !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-indicators{
+    bottom: -60px !important;
+}
+.padding-10{
+    padding-bottom: 100px !important;
+}
+.testimonial-1{
+    background-image: url(img/testimonial-img-1.jpg) !important;
+    background-size: cover !important;
+}
+.testimonial-2{
+    background-image: url(img/testimonial-img-2.jpg) !important;
+    background-size: cover !important;
+}
+.testimonial-3{
+    background-image: url(img/testimonial-img-3.jpg) !important;
+    background-size: cover !important;
+}
 
 .footer{
     background: linear-gradient(rgba(102, 16, 242, 0.05), rgba(102, 16, 242, 0.05));
