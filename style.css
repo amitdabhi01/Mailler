@@ -3,8 +3,16 @@
     padding-bottom: 100px;
     position: relative;
 }
-
-.navbar-light{
+.navbar.navbar-expand-lg .navbar-toggler{
+    padding: 10px 20px !important;
+    border: 1px solid #f74780 !important;
+    color: #f74780 !important;
+}
+.navbar-light .navbar-collapse{
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
+}
+.navbar-light .navbar-nav .nav-link{
     margin-right: 25px;
     padding: 35px 0px !important;
     font-size: 16px !important;
@@ -141,12 +149,71 @@
     z-index: -1;
     animation: bgMove 5s linear infinite;
 }
+@keyframes bgMove{
+    0%{
+        right: 0px;
+    }
+    50%{
+        right: 20px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+.hero-header .rotate-img img{
+    position: relative;
+    animation: RotateMove 30s linear infinite;
+    z-index: -1;
+}
+@keyframes RotateMove{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 200px;
+    }
+    100%{
+        left: 0px;
+    }
+}
 
 
-
-
-
-
+.hero-header .rotate-img .rotate-sty-2{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 5px solid rgba(247, 71, 128, 0.1);
+    background: transparent;
+    animation: RotateMoveSty-2 45s linear infinite;
+    transition: 0.5s
+}
+@keyframes RotateMoveSty-2{
+    0%{
+        left: 0px;
+    }
+    40%{
+        top: -30px;
+    }
+    50%{
+        left: 500px;
+    }
+    70%{
+        top: 200px;
+    }
+    80%{
+        left: 100px;
+    }
+    95%{
+        top: -30px;
+    }
+    100%{
+        left: 0px;
+    }
+}
 
 .button-1{
     border-color: #f74780 !important;
@@ -274,10 +341,28 @@ p{
     color: #6610f2 !important;
 }
 
+.price-item{
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s !important;
+}
+.price .price-item .price-item-offer{
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    top: -45px;
+    right: -80px;
+    background: #f74780;
+    color: #fff;
+    transform: rotate(42deg);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
 .price-item:hover{
     background-color: white !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.1) !important;
-    transition: 0.5s !important;
 }
 
 .blog-content{
@@ -408,4 +493,23 @@ p{
 .owl-stage-outer{
     position: relative;
     overflow: hidden;
+}
+
+.top{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: #f74780 !important;
+    color: #fff !important;
+    border-radius: 40px !important;
+    width: 65px;
+    height: 65px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.top:hover{
+    background-color: #fff !important;
+    color: #f74780 !important;
+    border: 1px solid #f74780 !important;
 }
